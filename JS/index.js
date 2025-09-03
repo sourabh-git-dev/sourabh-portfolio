@@ -1,4 +1,5 @@
 let otpVerified = false;
+const BASE_URL = "https://portfolio-backend-r2dr.onrender.com";
 
 document.querySelector("form").addEventListener("submit", function (e) {
     e.preventDefault(); 
@@ -12,16 +13,11 @@ document.querySelector("form").addEventListener("submit", function (e) {
     const email = document.querySelector('input[name="email"]').value;
     const message = document.querySelector('textarea[name="message"]').value;
 
-    fetch("http://localhost:8080/api/messages", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        name: name,
-        email: email,
-        message: message
-      })
+    fetch(`${BASE_URL}/api/messages`, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ name, email, message })
+})
     })
     .then(response => {
       if (!response.ok) {
@@ -57,11 +53,12 @@ async function sendOtp() {
   }
 
   try {
-    const res = await fetch("http://localhost:8080/otp/send", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email })
-    });
+   const res = await fetch(`${BASE_URL}/otp/send`, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ email })
+});
+
 
     if (!res.ok) {
       throw new Error(await res.text());
@@ -86,11 +83,12 @@ async function sendOtp() {
   }
 
   try {
-    const res = await fetch("http://localhost:8080/otp/verify", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, otp })
-    });
+  const res = await fetch(`${BASE_URL}/otp/verify`, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ email, otp })
+});
+
 
     if (!res.ok) {
       throw new Error(await res.text());
