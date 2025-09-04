@@ -279,8 +279,12 @@ a {
   }
 
      #logo{
-     width: 50px;
+     width: 40px;
      }
+
+    #logo:hover{
+    width: 70px;
+}
     
   .sidebar {
     position: relative;
@@ -348,8 +352,12 @@ a {
     font-size: 20px;
   }
     #logo{
-     width: 50px;
+     width: 40px;
      }
+
+    #logo:hover{
+    width: 70px;
+}
     
 
   h3 {
