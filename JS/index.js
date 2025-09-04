@@ -78,12 +78,14 @@ async function sendOtp() {
 async function verifyOtp() {
   const email = document.getElementById("email").value;
   const otp = document.getElementById("otpInput").value;
+  const verify = document.getElementById("verify");
 
   if (!otp || !email) {
     alert("Please Enter Both Email and OTP");
     return;
   }
-
+  verify.disabled = true;
+  verify.innerText="verifying..."
   try {
     const res = await fetch(`${BASE_URL}/otp/verify`, {
       method: "POST",
@@ -101,5 +103,9 @@ async function verifyOtp() {
   } catch (err) {
     otpVerified = false;
     alert("❌ Error: " + err.message);
+  }
+  finally{
+    verify.disabled=false;
+    veriify.innerText="verify";
   }
 }
