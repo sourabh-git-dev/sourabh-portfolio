@@ -185,8 +185,7 @@ textarea{
     border-radius: 8px;
     color: white;
     background-color: #0073e6;
-    height: 30px;
-    width: 70px;
+    padding: 7px 14px;
     border: none;
     font-size: 14px;         
     cursor: pointer;    
