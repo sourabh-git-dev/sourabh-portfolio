@@ -37,6 +37,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
 // Send OTP
 async function sendOtp() {
   const email = document.getElementById("email").value;
+  const sendBtn = document.getElementById("otp"); 
 
   if (!email) {
     alert("Please Enter Your Email");
@@ -48,6 +49,8 @@ async function sendOtp() {
     alert("Please Enter A Valid Email Address");
     return;
   }
+  sendBtn.disabled = true;
+  sendBtn.innerText = "Sending...";
 
   try {
     const res = await fetch(`${BASE_URL}/otp/send`, {
@@ -64,6 +67,10 @@ async function sendOtp() {
     alert("✅ " + data);
   } catch (err) {
     alert("❌ Error: " + err.message);
+  }
+ finally {
+    sendBtn.disabled = false;
+    sendBtn.innerText = "Send OTP";
   }
 }
 
