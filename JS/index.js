@@ -106,6 +106,6 @@ async function verifyOtp() {
   }
   finally{
     verify.disabled=false;
-    veriify.innerText="verify";
+    verify.innerText="verify";
   }
 }
