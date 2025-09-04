@@ -85,7 +85,7 @@ async function verifyOtp() {
     return;
   }
   verify.disabled = true;
-  verify.innerText="verifying..."
+  verify.innerText="Verifying..."
   try {
     const res = await fetch(`${BASE_URL}/otp/verify`, {
       method: "POST",
@@ -106,6 +106,6 @@ async function verifyOtp() {
   }
   finally{
     verify.disabled=false;
-    verify.innerText="verify";
+    verify.innerText="Verify";
   }
 }
