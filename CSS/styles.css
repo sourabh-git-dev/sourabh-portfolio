@@ -335,6 +335,13 @@ a {
 a {
   text-decoration: none;
 }
+    marquee {
+    display: flex;         
+    flex-wrap: wrap;       
+    overflow: visible;     
+    animation: none;       
+    white-space: normal;   
+  }
 
 
 
@@ -419,5 +426,12 @@ a {
     flex-direction: column;
     gap: 15px;
     text-align: center;
+  }
+    marquee {
+    display: flex;         
+    flex-wrap: wrap;       
+    overflow: visible;     
+    animation: none;       
+    white-space: normal;   
   }
 }
