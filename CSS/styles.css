@@ -278,6 +278,10 @@ a {
     flex-direction: column;
   }
 
+     #logo{
+     width: 50px;
+     }
+    
   .sidebar {
     position: relative;
     width: 100%;
@@ -343,6 +347,10 @@ a {
   h1 {
     font-size: 20px;
   }
+    #logo{
+     width: 50px;
+     }
+    
 
   h3 {
     font-size: 16px;
