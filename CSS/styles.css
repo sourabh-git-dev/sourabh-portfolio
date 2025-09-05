@@ -296,7 +296,7 @@ a {
 
   .sidebar ul {
     display: flex;
-    gap: 15px;
+    gap: 10px;
   }
 
   .content {
@@ -365,6 +365,10 @@ a {
     #logo:hover{
     width: 50px;
 }
+    .sidebar ul {
+        gap: 10px;
+    }
+
     
 
   h3 {
