@@ -229,6 +229,10 @@ footer{
     height: 50px;
     width: 85vw;
 }
+#copyright{
+  font-size: 14px;
+  align-items: center;
+}
 
 
 
@@ -243,10 +247,7 @@ footer{
 a {
   text-decoration: none;
 }
-
-
-
-
+    
   .profile-img {
     width: 200px;
     height: auto;
@@ -346,9 +347,7 @@ a {
     animation: none;       
     white-space: normal;   
   }
-
-
-
+    
   footer {
     gap: 30px;
     flex-wrap: wrap;
@@ -372,9 +371,7 @@ a {
     .sidebar ul {
         gap: 10px;
     }
-
     
-
   h3 {
     font-size: 16px;
   }
@@ -394,9 +391,6 @@ a {
 a {
   text-decoration: none;
 }
-
-
-
   #about img {
     height: 40px;
     width: 60px;
