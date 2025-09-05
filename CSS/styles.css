@@ -297,6 +297,7 @@ a {
     flex-direction: row;
     justify-content: center;
     padding: 10px;
+    margin-left: -20px;
   }
 
   .sidebar ul {
