@@ -359,6 +359,7 @@ a {
   }
     #logo{
      width: 40px;
+     margin-right: 5px;
      }
 
     #logo:hover{
