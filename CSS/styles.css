@@ -385,7 +385,7 @@ a {
   #aboutpara {
     padding-left: 20px;
     padding-right: 20px;
-    text-indent: 40px;
+    text-align: justify;
     font-size: 16px;
   }
   
@@ -436,6 +436,8 @@ a {
     flex-wrap: wrap;       
     overflow: visible;     
     animation: none;       
-    white-space: normal;   
+    white-space: normal;
+    padding-left: 20px;
+    padding-top: 20px;
   }
 }
