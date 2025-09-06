@@ -81,16 +81,20 @@ section {
     border-radius: 10px;
 }
 
-#about p{
-    padding-right: 40px;
-    font-size: 18px;
+#about p {
+  font-size: 18px;
+  text-align: justify;
 }
 
-#aboutpara{
-    padding-left: 80px;
-    padding-right: 40px;
-    text-indent: 85px;
+#aboutpara {
+  padding: 15px 30px 0px 10px;
+  text-indent: 50px;   
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.5;
 }
+
+
 
 #about img{
     height: 70px;
@@ -153,7 +157,8 @@ input {
     border-radius: 10px;
     background: #333;
     color: white;
-    width: 50%;
+    width: 100%;  
+    max-width: 400px; 
     margin-bottom: 10px;
 }
 
@@ -165,7 +170,8 @@ textarea{
     background: #333;
     color: white;
     height: 100px;
-    width: 700px;
+    width: 100%;   
+    max-width: 700px;
 }
 
 #otp {
@@ -227,7 +233,8 @@ footer{
     justify-content: center;
     gap: 150px;
     height: 50px;
-    width: 85vw;
+    width: 100%;
+
 }
 #copyright{
   font-size: 14px;
@@ -306,6 +313,7 @@ a {
   }
 
   .content {
+    width: 100%;
     margin-left: 0;
     padding: 10px;
   }
@@ -388,6 +396,13 @@ a {
     text-align: justify;
     font-size: 16px;
   }
+
+  #about p,
+#aboutpara {
+  font-size: 16px;
+  padding: 10px;
+}
+
   
 a {
   text-decoration: none;
@@ -435,9 +450,10 @@ a {
     display: flex;         
     flex-wrap: wrap;       
     overflow: visible;     
-    animation: none;       
+    animation: none;    
     white-space: normal;
-    padding-left: 20px;
+    padding-left: 60px;
+    padding-right: 20px;
     padding-top: 20px;
   }
 }
