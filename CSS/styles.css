@@ -99,7 +99,7 @@ section {
 #about img{
     height: 70px;
     width: 100px;
-    margin: 30px;
+    margin: 20px 30px 40px 30px;
     transition: 1s;
 }
 
