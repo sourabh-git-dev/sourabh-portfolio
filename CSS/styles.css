@@ -409,7 +409,10 @@ p{
   font-size: 16px;
   padding: 10px;
 }
-
+    
+.imgtext{
+  padding-bottom: 8px;
+}
   
 a {
   text-decoration: none;
